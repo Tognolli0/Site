@@ -1,13 +1,18 @@
 # Diogo Tognolli Portfolio
 
-Portfólio pessoal desenvolvido para apresentar posicionamento profissional, stack principal e projetos em destaque.
+Portfolio profissional desenvolvido com React, TypeScript e Vite.
+
+## Objetivo
+
+Apresentar posicionamento profissional, projetos principais, formacao tecnica e contato em um site mais forte visualmente e mais estruturado para recrutadores e clientes.
 
 ## Stack
 
-- HTML
+- React
+- TypeScript
+- Vite
 - CSS
-- JavaScript
 
-## Publicação
+## Publicacao
 
-O objetivo deste repositório é ser publicado no GitHub Pages como site de portfólio.
+O deploy e feito via GitHub Pages com GitHub Actions.

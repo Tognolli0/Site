@@ -1,0 +1,33 @@
+{
+  "name": "site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Portfolio profissional de Diogo Tognolli.",
+  "type": "module",
+  "author": "Diogo Tognolli",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tognolli0/Site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tognolli0/Site/issues"
+  },
+  "homepage": "https://tognolli0.github.io/Site/",
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.8"
+  }
+}
