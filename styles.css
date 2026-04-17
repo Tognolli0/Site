@@ -140,17 +140,21 @@ a {
   position: relative;
 }
 
+.hero-copy {
+  padding-top: 18px;
+}
+
 .eyebrow {
   display: inline-flex;
   margin: 0 0 18px;
-  padding: 8px 14px;
+  padding: 7px 12px;
   border: 1px solid rgba(120, 166, 255, 0.18);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.04);
   color: var(--primary);
-  font-size: 0.86rem;
+  font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -163,13 +167,18 @@ a {
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 5vw, 5.2rem);
-  letter-spacing: -0.05em;
+  max-width: 720px;
+  font-size: clamp(2.35rem, 4.1vw, 4.35rem);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
 }
 
 .hero h1 span {
-  color: var(--primary);
-  text-shadow: 0 0 28px rgba(89, 208, 255, 0.32);
+  background: linear-gradient(135deg, #7dd3fc 0%, #59d0ff 38%, #7c8cff 68%, #b794ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
 }
 
 .hero-text,
@@ -185,10 +194,10 @@ a {
 }
 
 .hero-text {
-  max-width: 640px;
-  margin: 24px 0 28px;
-  font-size: 1.08rem;
-  line-height: 1.8;
+  max-width: 620px;
+  margin: 20px 0 24px;
+  font-size: 1rem;
+  line-height: 1.72;
 }
 
 .hero-actions,
@@ -237,7 +246,7 @@ a {
 .hero-highlights li,
 .chip-group span,
 .project-tag {
-  padding: 10px 14px;
+  padding: 9px 13px;
   border: 1px solid rgba(120, 166, 255, 0.14);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.03);
@@ -349,7 +358,7 @@ a {
   display: block;
   margin-bottom: 8px;
   color: var(--text);
-  font-size: 1.1rem;
+  font-size: 1.02rem;
 }
 
 .signal-bar {
@@ -379,13 +388,14 @@ a {
 }
 
 .section-heading h2 {
-  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-size: clamp(1.85rem, 3vw, 2.8rem);
   letter-spacing: -0.04em;
 }
 
 .about-grid,
 .stack-grid,
-.pillars-grid {
+.pillars-grid,
+.cert-grid {
   display: grid;
   gap: 18px;
 }
@@ -396,6 +406,10 @@ a {
 
 .stack-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cert-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .pillars-grid {
@@ -413,7 +427,7 @@ a {
 .pillars-grid h3 {
   margin: 0 0 14px;
   font-family: "Sora", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.18rem;
 }
 
 .chip-group {
@@ -428,6 +442,7 @@ a {
   gap: 18px;
 }
 
+.cert-featured,
 .project-featured {
   grid-column: span 2;
   background:
@@ -478,6 +493,7 @@ a {
   .hero,
   .about-grid,
   .stack-grid,
+  .cert-grid,
   .projects-grid,
   .pillars-grid,
   .contact-section,
@@ -485,6 +501,7 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .cert-featured,
   .project-featured {
     grid-column: auto;
   }
@@ -527,7 +544,7 @@ a {
   }
 
   .hero h1 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 
   .hero-grid {
