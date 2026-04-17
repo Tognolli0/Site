@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Portfólio de Diogo Tognolli, desenvolvedor back-end com foco em C#, .NET, APIs, SQL e soluções para cenários reais."
+    content="Portfolio de Diogo Tognolli, backend engineer com foco em C#, .NET, APIs, SQL, observabilidade e sistemas para cenarios reais."
   />
   <meta
     name="keywords"
-    content="Diogo Tognolli, desenvolvedor back-end, C#, .NET, APIs, SQL, portfolio"
+    content="Diogo Tognolli, backend engineer, C#, .NET, APIs, SQL, portfolio"
   />
   <meta name="author" content="Diogo Tognolli" />
-  <meta property="og:title" content="Diogo Tognolli | Backend Developer" />
+  <meta property="og:title" content="Diogo Tognolli | Backend Engineer" />
   <meta
     property="og:description"
-    content="Portfólio com projetos em .NET, APIs, dashboards, OCR e automação."
+    content="Portfolio com projetos, certificacoes e posicionamento tecnico em .NET, APIs, SQL e integracoes."
   />
   <meta property="og:type" content="website" />
-  <title>Diogo Tognolli | Backend Developer</title>
+  <title>Diogo Tognolli | Backend Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -28,6 +28,13 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true">
+    <span class="scroll-progress-bar"></span>
+  </div>
+
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
   <div class="page-shell">
     <header class="site-header">
       <a class="brand" href="#top">
@@ -43,6 +50,7 @@
       <nav class="site-nav">
         <a href="#sobre">Sobre</a>
         <a href="#stack">Stack</a>
+        <a href="#provas">Provas</a>
         <a href="#certificacoes">Certificacoes</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
@@ -52,43 +60,49 @@
     <main id="top">
       <section class="hero">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Backend Engineer · .NET APIs · SQL · Integrations</p>
+          <p class="eyebrow">Backend engineer · C# · .NET · SQL · APIs</p>
+          <div class="hero-badge-line">
+            <span class="micro-badge">Observabilidade</span>
+            <span class="micro-badge">Integracoes</span>
+            <span class="micro-badge">Arquitetura pragmatica</span>
+          </div>
           <h1>
-            Engenharia back-end para
-            <span>integracoes confiaveis</span>, rastreabilidade e sistemas
-            prontos para escalar.
+            Construo <span>sistemas back-end confiaveis</span> para quando o
+            produto precisa escalar, integrar e continuar legivel.
           </h1>
           <p class="hero-text">
-            Sou Diogo Tognolli. Trabalho com C#, .NET, SQL e arquitetura de
-            APIs para transformar regras de negocio em software claro,
-            observavel e preparado para evolucao real.
+            Meu foco esta em APIs, persistencia, contratos claros, SQL,
+            rastreabilidade e fluxos internos que realmente sustentam o negocio.
+            Este portfolio foi desenhado para mostrar nao so tecnologia, mas
+            tambem criterio de entrega.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#projetos">Ver projetos</a>
-            <a
-              class="button button-secondary"
-              href="https://www.linkedin.com/in/diogotognolli"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Falar no LinkedIn
-            </a>
+            <a class="button button-primary" href="#projetos">Explorar projetos</a>
+            <a class="button button-secondary" href="#certificacoes">Ver formacao tecnica</a>
           </div>
 
-          <ul class="hero-highlights">
-            <li>APIs REST e integracoes</li>
-            <li>Arquitetura orientada a manutencao</li>
-            <li>SQL, rastreabilidade e observabilidade</li>
-            <li>Automacao e fluxos internos</li>
-          </ul>
+          <div class="hero-trust">
+            <article>
+              <strong>5 projetos</strong>
+              <span>selecionados para portfolio</span>
+            </article>
+            <article>
+              <strong>70+ certificados</strong>
+              <span>curados por relevancia tecnica</span>
+            </article>
+            <article>
+              <strong>Back-end first</strong>
+              <span>APIs, SQL, logs e integracoes</span>
+            </article>
+          </div>
         </div>
 
         <div class="hero-panel reveal">
-          <div class="glass-card intro-card">
-            <div class="intro-topline">
+          <div class="glass-card command-card">
+            <div class="card-topline">
               <span class="status-dot"></span>
-              Disponivel para projetos e oportunidades
+              Pipeline de valor tecnico
             </div>
             <div class="terminal-window">
               <div class="terminal-bar">
@@ -97,87 +111,126 @@
                 <span></span>
               </div>
               <div class="terminal-body">
-                <p><span>&gt;</span> stack.primary()</p>
-                <p class="terminal-answer">["C#", ".NET", "ASP.NET Core", "SQL"]</p>
-                <p><span>&gt;</span> focus.current()</p>
-                <p class="terminal-answer">"APIs, tracing, SQL e automacao"</p>
-                <p><span>&gt;</span> portfolio.mode</p>
-                <p class="terminal-answer">"real-world systems"</p>
+                <p><span>&gt;</span> input.business_rules()</p>
+                <p class="terminal-answer">"cenario real, fluxo e restricoes"</p>
+                <p><span>&gt;</span> backend.design()</p>
+                <p class="terminal-answer">"API, persistencia, tracing, manutencao"</p>
+                <p><span>&gt;</span> output.delivery()</p>
+                <p class="terminal-answer">"software confiavel e evolutivo"</p>
               </div>
             </div>
           </div>
 
-          <div class="hero-grid">
-            <article class="mini-card">
-              <strong>5</strong>
-              <span>projetos principais selecionados</span>
+          <div class="signal-stack">
+            <article class="signal-card">
+              <span class="signal-kicker">Especialidade</span>
+              <strong>Back-end para produto e operacao</strong>
+              <p>Quando precisa conectar regra de negocio, dados e consistencia.</p>
             </article>
-            <article class="mini-card">
-              <strong>Back-end</strong>
-              <span>foco em APIs, SQL, logs e integracoes</span>
-            </article>
-            <article class="mini-card">
-              <strong>System thinking</strong>
-              <span>do contrato da API ao consumo em produto</span>
-            </article>
-            <article class="mini-card">
-              <strong>Entrega real</strong>
-              <span>portfolio organizado para recrutadores e clientes</span>
+            <article class="signal-card">
+              <span class="signal-kicker">Forca tecnica</span>
+              <strong>.NET, SQL, integracoes e rastreabilidade</strong>
+              <p>Com foco em software que aguenta manutencao de verdade.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="signal-bar reveal">
-        <div class="signal-item">
-          <span class="signal-label">Especialidade</span>
-          <strong>Back-end e APIs</strong>
-        </div>
-        <div class="signal-item">
-          <span class="signal-label">Base técnica</span>
-          <strong>.NET, SQL e integrações</strong>
-        </div>
-        <div class="signal-item">
-          <span class="signal-label">Perfil</span>
-          <strong>Prático, analítico e orientado a entrega</strong>
+      <section class="ticker reveal" aria-label="Palavras-chave do perfil">
+        <div class="ticker-track">
+          <span>APIs REST</span>
+          <span>ASP.NET Core</span>
+          <span>SQL e modelagem</span>
+          <span>Logs e auditoria</span>
+          <span>Observabilidade</span>
+          <span>OCR</span>
+          <span>Dashboards</span>
+          <span>Automacao</span>
+          <span>Integracoes</span>
+          <span>Back-end pragmatica</span>
         </div>
       </section>
 
       <section class="section" id="sobre">
         <div class="section-heading reveal">
-          <p class="eyebrow">Sobre mim</p>
-          <h2>Construo software com clareza técnica e visão de produto.</h2>
+          <p class="eyebrow">Sobre</p>
+          <h2>Um portfolio pensado para convencer pela estrutura, nao pelo exagero.</h2>
         </div>
 
-        <div class="about-grid">
-          <article class="glass-card reveal">
+        <div class="story-grid">
+          <article class="story-card reveal">
+            <span class="story-index">01</span>
+            <h3>Como eu penso</h3>
             <p>
-              Meu foco principal está no back-end: modelagem de regras,
-              construção de APIs, persistência de dados, rastreabilidade e
-              integrações. Gosto de projetos em que a engenharia precisa
-              resolver um problema concreto e não apenas "parecer moderna".
+              Gosto de software em que a arquitetura suporta a operacao, a manutencao
+              e a evolucao. Meu interesse maior esta em sistemas que precisam ser
+              compreendidos por quem chega depois.
             </p>
           </article>
 
-          <article class="glass-card reveal">
+          <article class="story-card reveal">
+            <span class="story-index">02</span>
+            <h3>Onde gero valor</h3>
             <p>
-              Meu portfólio reúne soluções com OCR, dashboards, auditoria,
-              biometria facial e fluxos internos, sempre buscando mostrar mais
-              do que código: contexto, estrutura e capacidade de entrega.
+              Traduzindo regra de negocio em APIs, persistencia, contratos de dados,
+              logs, auditoria e integracoes. O objetivo e entregar previsibilidade.
             </p>
+          </article>
+
+          <article class="story-card reveal">
+            <span class="story-index">03</span>
+            <h3>O que este site mostra</h3>
+            <p>
+              Projetos principais, base tecnica, formacao continua e sinais reais
+              de consistencia. Nao e so vitrine visual; e uma leitura de posicionamento.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="provas">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Provas de entrega</p>
+          <h2>Sinais rapidos que ajudam o leitor a confiar mais cedo.</h2>
+        </div>
+
+        <div class="proof-grid">
+          <article class="proof-card proof-featured reveal">
+            <span class="project-tag">Portfolio curado</span>
+            <h3>Repositorios reorganizados para destacar o que importa.</h3>
+            <p>
+              Os projetos ativos foram limpos, padronizados e reposicionados para
+              apresentar melhor seu valor tecnico. Estudos e experimentos ficaram
+              fora da vitrine principal para evitar ruido.
+            </p>
+          </article>
+
+          <article class="proof-card reveal">
+            <strong>APIs e rastreabilidade</strong>
+            <p>Projetos com foco em logs, auditoria, integracoes e consistencia operacional.</p>
+          </article>
+
+          <article class="proof-card reveal">
+            <strong>Base em dados</strong>
+            <p>Modelagem, SQL, administracao de banco e persistencia aplicada a sistemas reais.</p>
+          </article>
+
+          <article class="proof-card reveal">
+            <strong>Visao de produto</strong>
+            <p>Mesmo com foco em back-end, penso no sistema inteiro e no consumo pela interface.</p>
           </article>
         </div>
       </section>
 
       <section class="section" id="stack">
         <div class="section-heading reveal">
-          <p class="eyebrow">Stack principal</p>
-          <h2>Tecnologias que sustentam meu trabalho.</h2>
+          <p class="eyebrow">Stack</p>
+          <h2>Tecnologia organizada por papel dentro do sistema.</h2>
         </div>
 
         <div class="stack-grid">
           <article class="stack-card reveal">
-            <h3>Back-end</h3>
+            <h3>Core back-end</h3>
             <div class="chip-group">
               <span>C#</span>
               <span>.NET</span>
@@ -189,7 +242,7 @@
           </article>
 
           <article class="stack-card reveal">
-            <h3>Banco e dados</h3>
+            <h3>Dados e persistencia</h3>
             <div class="chip-group">
               <span>SQL Server</span>
               <span>PostgreSQL</span>
@@ -201,14 +254,14 @@
           </article>
 
           <article class="stack-card reveal">
-            <h3>Complementar</h3>
+            <h3>Camada complementar</h3>
             <div class="chip-group">
               <span>React</span>
               <span>Blazor</span>
               <span>Vite</span>
               <span>Git</span>
               <span>Docker</span>
-              <span>Automação</span>
+              <span>Automacao</span>
             </div>
           </article>
         </div>
@@ -216,8 +269,23 @@
 
       <section class="section" id="certificacoes">
         <div class="section-heading reveal">
-          <p class="eyebrow">Certificacoes e trilhas</p>
-          <h2>Formacao continua com foco em software, dados, cloud e base tecnica.</h2>
+          <p class="eyebrow">Certificacoes</p>
+          <h2>Formacao continua apresentada como contexto tecnico, nao como lista solta.</h2>
+        </div>
+
+        <div class="cert-summary reveal">
+          <article>
+            <strong>70+</strong>
+            <span>certificados e comprovacoes mapeados</span>
+          </article>
+          <article>
+            <strong>21</strong>
+            <span>modulos no bootcamp Java + AWS</span>
+          </article>
+          <article>
+            <strong>5 frentes</strong>
+            <span>dados, cloud, linguagens, web e fundamentos</span>
+          </article>
         </div>
 
         <div class="cert-grid">
@@ -225,62 +293,54 @@
             <span class="project-tag">Panorama</span>
             <h3>Base de estudo ampla e consistente</h3>
             <p>
-              Mapeei mais de <strong>70 certificados e comprovacoes</strong>
-              entre trilhas de desenvolvimento, banco de dados, cloud, logica,
-              Java, C#, front-end e fundamentos complementares. Em vez de
-              listar tudo sem criterio, a pagina destaca o que mais reforca
-              meu posicionamento tecnico.
+              Seus certificados mostram repeticao de temas importantes: banco de dados,
+              C#, Java, cloud AWS, logica, web, automacao e fundamentos de tecnologia.
+              Isso ajuda a passar imagem de constancia e nao de estudo aleatorio.
             </p>
-            <ul>
-              <li>Bootcamp Java e AWS com 21 modulos concluídos</li>
-              <li>Trilha Bradesco com foco em banco de dados, C# e web</li>
-              <li>Formacao complementar em AWS, SENAI, IFRS, FIAP e Udemy</li>
-            </ul>
           </article>
 
           <article class="project-card reveal">
             <span class="project-tag">Java + AWS</span>
             <h3>Bootcamp CI&T Backend com Java e AWS</h3>
             <p>
-              Trilha com introducao a Java, orientacao a objetos, APIs REST,
-              Swagger, excecoes, MongoDB e fundamentos de cloud AWS.
+              Trilha com Java, orientacao a objetos, APIs REST, Swagger, excecoes,
+              MongoDB e fundamentos de cloud aplicada.
             </p>
           </article>
 
           <article class="project-card reveal">
             <span class="project-tag">Banco de dados</span>
-            <h3>Dados, modelagem e administracao</h3>
+            <h3>Dados, SQL e administracao</h3>
             <p>
-              Certificados em administracao de banco de dados, banco de dados
-              IFRS, fundamentos de SQL e cursos ligados a armazenamento em AWS.
+              Certificados em administracao de banco de dados, trilhas IFRS e
+              modulos de armazenamento em AWS reforcam sua base de persistencia.
             </p>
           </article>
 
           <article class="project-card reveal">
-            <span class="project-tag">C# e .NET</span>
-            <h3>Base de linguagem e evolucao tecnica</h3>
+            <span class="project-tag">C# e back-end</span>
+            <h3>Linguagem e base de implementacao</h3>
             <p>
-              Formacao complementar com C# basico e avancado, logica de
-              programacao, arquitetura de APIs e projetos práticos ligados ao
-              universo back-end.
+              Cursos de C# basico e avancado, logica de programacao e estudos
+              ligados a APIs fortalecem seu posicionamento principal.
             </p>
           </article>
 
           <article class="project-card reveal">
             <span class="project-tag">Cloud</span>
-            <h3>AWS, nuvem e infraestrutura</h3>
+            <h3>AWS, infraestrutura e observabilidade</h3>
             <p>
-              Estudos em fundamentos de nuvem, infraestrutura global, redes,
-              monitoramento, seguranca e armazenamento na AWS.
+              Fundamentos de nuvem, infraestrutura global, redes, monitoramento
+              e seguranca completam a visao de sistemas distribuidos.
             </p>
           </article>
 
           <article class="project-card reveal">
             <span class="project-tag">Complementar</span>
-            <h3>Visao ampla de tecnologia e negocio</h3>
+            <h3>Amplitude sem perder foco</h3>
             <p>
-              Trilhas em HTML, JavaScript, Python, Java, blockchain, LGPD,
-              industria 4.0, data science, logistica e produtividade.
+              HTML, JavaScript, Python, blockchain, LGPD, data science e outros
+              estudos aparecem aqui como repertorio, nao como desvio do posicionamento.
             </p>
           </article>
         </div>
@@ -288,73 +348,70 @@
 
       <section class="section" id="projetos">
         <div class="section-heading reveal">
-          <p class="eyebrow">Projetos em destaque</p>
-          <h2>Projetos selecionados para mostrar profundidade técnica.</h2>
+          <p class="eyebrow">Projetos</p>
+          <h2>Projetos escolhidos para mostrar profundidade tecnica e potencial de entrega.</h2>
         </div>
 
         <div class="projects-grid">
           <article class="project-card reveal project-featured">
-            <span class="project-tag">Projeto full stack</span>
-            <h3>Dashboard Gestão Casal React</h3>
+            <span class="project-tag">Projeto de produto</span>
+            <h3>Dashboard Gestao Casal React</h3>
             <p>
-              Aplicação com React e ASP.NET Core para gestão financeira,
-              dashboard analítico e OCR voltado a organização de dados.
+              Aplicacao com React e ASP.NET Core para gestao financeira, OCR,
+              dashboard analitico e estrutura de produto mais proxima de um cenario real.
             </p>
             <ul>
               <li>React + ASP.NET Core</li>
-              <li>Arquitetura de produto</li>
-              <li>Fluxo orientado a uso real</li>
+              <li>OCR e visualizacao de dados</li>
+              <li>Estrutura pensada para evolucao</li>
             </ul>
             <a href="https://github.com/Tognolli0/Dashboard_Gestao_Casal_React" target="_blank" rel="noreferrer">
-              Ver repositório
+              Ver repositorio
             </a>
           </article>
 
           <article class="project-card reveal">
-            <span class="project-tag">Logística</span>
+            <span class="project-tag">Fluxo operacional</span>
             <h3>FormularioSetec</h3>
             <p>
-              Sistema para logística de viagens com front-end React, API em
-              ASP.NET Core e persistência orientada a processo.
+              Sistema para logistica de viagens com front-end React, API em ASP.NET Core
+              e persistencia orientada a processo.
             </p>
             <a href="https://github.com/Tognolli0/FormularioSetec" target="_blank" rel="noreferrer">
-              Ver repositório
+              Ver repositorio
             </a>
           </article>
 
           <article class="project-card reveal">
-            <span class="project-tag">Rastreabilidade</span>
+            <span class="project-tag">Observabilidade</span>
             <h3>AuditService.API</h3>
             <p>
-              API dedicada a auditoria centralizada, com foco em logs,
-              rastreabilidade e integração entre sistemas corporativos.
+              API dedicada a auditoria centralizada, logs e rastreabilidade entre sistemas.
             </p>
             <a href="https://github.com/Tognolli0/AuditService.API" target="_blank" rel="noreferrer">
-              Ver repositório
+              Ver repositorio
             </a>
           </article>
 
           <article class="project-card reveal">
-            <span class="project-tag">Visão computacional</span>
+            <span class="project-tag">Biometria offline</span>
             <h3>FaceID C# + FaceONNX</h3>
             <p>
-              Prova de conceito de biometria facial offline em C# com ONNX
-              Runtime, pensada para exploração técnica e experimentação séria.
+              PoC de biometria facial offline em C# com ONNX Runtime e foco exploratorio serio.
             </p>
             <a href="https://github.com/Tognolli0/FaceID-CSharp---FaceONNX" target="_blank" rel="noreferrer">
-              Ver repositório
+              Ver repositorio
             </a>
           </article>
 
           <article class="project-card reveal">
-            <span class="project-tag">Dashboard</span>
+            <span class="project-tag">Dashboard corporativo</span>
             <h3>Dashboard Interativo</h3>
             <p>
-              Dashboard em Blazor Server com indicadores, visualização de dados
-              e base pronta para evolução em ambiente corporativo.
+              Dashboard em Blazor Server com indicadores, leitura visual e base para integracoes.
             </p>
             <a href="https://github.com/Tognolli0/Dashboard_Interativo" target="_blank" rel="noreferrer">
-              Ver repositório
+              Ver repositorio
             </a>
           </article>
         </div>
@@ -362,22 +419,22 @@
 
       <section class="section">
         <div class="section-heading reveal">
-          <p class="eyebrow">Diferenciais</p>
-          <h2>O que eu busco entregar em cada projeto.</h2>
+          <p class="eyebrow">Leitura rapida</p>
+          <h2>Se alguem tiver um minuto no seu site, o que precisa ficar claro?</h2>
         </div>
 
-        <div class="pillars-grid">
-          <article class="glass-card reveal">
-            <h3>Clareza</h3>
-            <p>Estruturas que facilitam manutenção, leitura e evolução técnica.</p>
+        <div class="summary-grid">
+          <article class="summary-card reveal">
+            <h3>Posicionamento</h3>
+            <p>Backend engineer com foco em APIs, SQL, integracoes e consistencia tecnica.</p>
           </article>
-          <article class="glass-card reveal">
-            <h3>Rastreabilidade</h3>
-            <p>Logs, auditoria e contexto para entender o sistema de ponta a ponta.</p>
+          <article class="summary-card reveal">
+            <h3>Evidencia</h3>
+            <p>Projetos curados, repositorios limpos e portfolio com narrativa mais profissional.</p>
           </article>
-          <article class="glass-card reveal">
-            <h3>Praticidade</h3>
-            <p>Soluções que resolvem problema real e não apenas um demo bonito.</p>
+          <article class="summary-card reveal">
+            <h3>Formacao</h3>
+            <p>Base continua em cloud, dados, Java, C#, web e fundamentos de software.</p>
           </article>
         </div>
       </section>
@@ -385,11 +442,11 @@
       <section class="section contact-section reveal" id="contato">
         <div class="contact-copy">
           <p class="eyebrow">Contato</p>
-          <h2>Vamos construir algo sólido e útil.</h2>
+          <h2>Se o objetivo e construir software confiavel, podemos conversar.</h2>
           <p>
-            Se você procura alguém com foco em back-end, APIs, dados e
-            organização técnica, meu perfil e meus projetos já mostram a
-            direção. O próximo passo pode começar por uma conversa.
+            Meu perfil hoje esta mais alinhado para oportunidades em back-end,
+            integracoes, APIs e engenharia de sistemas. O melhor proximo passo
+            e uma conversa direta pelo LinkedIn ou GitHub.
           </p>
         </div>
 
@@ -415,7 +472,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="current-year"></span> Diogo Tognolli. Portfólio profissional.</p>
+      <p>© <span id="current-year"></span> Diogo Tognolli. Backend engineer portfolio.</p>
     </footer>
   </div>
 
