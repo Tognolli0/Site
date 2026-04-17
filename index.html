@@ -1,116 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tognolli</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfólio de Diogo Tognolli, desenvolvedor back-end com foco em C#, .NET, APIs, SQL e soluções para cenários reais."
+  />
+  <meta
+    name="keywords"
+    content="Diogo Tognolli, desenvolvedor back-end, C#, .NET, APIs, SQL, portfolio"
+  />
+  <meta name="author" content="Diogo Tognolli" />
+  <meta property="og:title" content="Diogo Tognolli | Backend Developer" />
+  <meta
+    property="og:description"
+    content="Portfólio com projetos em .NET, APIs, dashboards, OCR e automação."
+  />
+  <meta property="og:type" content="website" />
+  <title>Diogo Tognolli | Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <header>
-        <img src="img/Logotipo.png" alt="logo Tognolli">
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Apple</li>
-                <li>Fale conosco</li>
-            </ul>
-        </nav>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>Diogo Tognolli</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#stack">Stack</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
-    <section class="conteiner">
-        <div class="list">
 
-            <div class="item active">
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Backend Developer · C# · .NET · APIs · SQL</p>
+          <h1>
+            Transformo regras de negocio em
+            <span>APIs robustas</span>, fluxos claros e sistemas prontos para
+            crescer.
+          </h1>
+          <p class="hero-text">
+            Sou Diogo Tognolli, desenvolvedor back-end com foco principal em
+            C#, .NET, SQL e integrações. Gosto de construir soluções com
+            rastreabilidade, organização e valor prático para cenários reais.
+          </p>
 
-                <div class="img1">
-                    <img src="img/iphone.png" alt="musculação">
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Ver projetos</a>
+            <a
+              class="button button-secondary"
+              href="https://www.linkedin.com/in/diogotognolli"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Falar no LinkedIn
+            </a>
+          </div>
 
-                </div>
-                <div class="content">
-                    <p class="Inforrmation musc">iPhone 16</p>
-                    <h2>
-                        Iphone
-                    </h2>
-                    <p class="description">
-                        Com a potência do chip A18 Pro e desempenho de CPU líder do setor, a linha Pro traz telas
-                        maiores, Controle da Câmera, recursos inovadores de câmera Pro e um salto imenso na bateria
-                    </p>
-                    <button class="Information">
-                        Saiba mais
-                    </button>
-                </div>
-
-            </div>
-            <div class="item">
-
-                <div class="img1">
-                    <img src="img/fone.png" alt="musculação">
-
-                </div>
-                <div class="content">
-                    <p class="Inforrmation musc">AirPods Pro</p>
-                    <h2>
-                        Fone apple
-                    </h2>
-                    <p class="description">
-                        AirPods Pro (2ª geração) com estojo de recarga MagSafe (USB-C) Branco
-                    </p>
-                    <button class="Information">
-                        Saiba mais
-                    </button>
-                </div>
-
-            </div>
-            <div class="item">
-
-                <div class="img1">
-                    <img src="img/relogio.png" alt="musculação">
-
-                </div>
-                <div class="content">
-                    <p class="Inforrmation musc">Apple watch</p>
-                    <h2>
-                        Smartwatch
-                    </h2>
-                    <p class="description">
-                        Com a potência do chip A18 Pro e, a linha Pro traz telasmaiores, Controle da Câmer recursos
-                        inovadores de câmera Pro e um salto.
-                    </p>
-                    <button class="Information">
-                        Saiba mais
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="arrows">
-            <button id="prev"><img src="img/arrows.png" alt="seta esquerda"></button>
-            <button id="next"><img src="img/arrows.png" alt="seta direita"></button>
-
+          <ul class="hero-highlights">
+            <li>APIs REST</li>
+            <li>Arquitetura focada em manutenção</li>
+            <li>Banco de dados e integrações</li>
+            <li>Dashboards e automação</li>
+          </ul>
         </div>
 
-        <div class="indicators">
-            <div class="number">01</div>
+        <div class="hero-panel reveal">
+          <div class="glass-card intro-card">
+            <div class="intro-topline">
+              <span class="status-dot"></span>
+              Disponível para projetos e oportunidades
+            </div>
+            <div class="terminal-window">
+              <div class="terminal-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="terminal-body">
+                <p><span>&gt;</span> stack.primary()</p>
+                <p class="terminal-answer">["C#", ".NET", "ASP.NET Core", "SQL"]</p>
+                <p><span>&gt;</span> focus.current()</p>
+                <p class="terminal-answer">"APIs, rastreabilidade e automação"</p>
+                <p><span>&gt;</span> portfolio.mode</p>
+                <p class="terminal-answer">"real-world systems"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-grid">
+            <article class="mini-card">
+              <strong>5</strong>
+              <span>projetos principais em destaque</span>
+            </article>
+            <article class="mini-card">
+              <strong>Back-end</strong>
+              <span>foco em APIs, SQL e integrações</span>
+            </article>
+            <article class="mini-card">
+              <strong>Full cycle</strong>
+              <span>do banco ao dashboard quando o produto pede</span>
+            </article>
+            <article class="mini-card">
+              <strong>Valor real</strong>
+              <span>portfólio organizado para recrutadores e clientes</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="signal-bar reveal">
+        <div class="signal-item">
+          <span class="signal-label">Especialidade</span>
+          <strong>Back-end e APIs</strong>
+        </div>
+        <div class="signal-item">
+          <span class="signal-label">Base técnica</span>
+          <strong>.NET, SQL e integrações</strong>
+        </div>
+        <div class="signal-item">
+          <span class="signal-label">Perfil</span>
+          <strong>Prático, analítico e orientado a entrega</strong>
+        </div>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Sobre mim</p>
+          <h2>Construo software com clareza técnica e visão de produto.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <p>
+              Meu foco principal está no back-end: modelagem de regras,
+              construção de APIs, persistência de dados, rastreabilidade e
+              integrações. Gosto de projetos em que a engenharia precisa
+              resolver um problema concreto e não apenas "parecer moderna".
+            </p>
+          </article>
+
+          <article class="glass-card reveal">
+            <p>
+              Meu portfólio reúne soluções com OCR, dashboards, auditoria,
+              biometria facial e fluxos internos, sempre buscando mostrar mais
+              do que código: contexto, estrutura e capacidade de entrega.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="stack">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Stack principal</p>
+          <h2>Tecnologias que sustentam meu trabalho.</h2>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card reveal">
+            <h3>Back-end</h3>
+            <div class="chip-group">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>ASP.NET Core</span>
+              <span>Entity Framework</span>
+              <span>Dapper</span>
+              <span>REST APIs</span>
+            </div>
+          </article>
+
+          <article class="stack-card reveal">
+            <h3>Banco e dados</h3>
+            <div class="chip-group">
+              <span>SQL Server</span>
+              <span>PostgreSQL</span>
+              <span>SQLite</span>
+              <span>Modelagem</span>
+              <span>Consultas</span>
+              <span>Rastreabilidade</span>
+            </div>
+          </article>
+
+          <article class="stack-card reveal">
+            <h3>Complementar</h3>
+            <div class="chip-group">
+              <span>React</span>
+              <span>Blazor</span>
+              <span>Vite</span>
+              <span>Git</span>
+              <span>Docker</span>
+              <span>Automação</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projetos">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projetos em destaque</p>
+          <h2>Projetos selecionados para mostrar profundidade técnica.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal project-featured">
+            <span class="project-tag">Projeto full stack</span>
+            <h3>Dashboard Gestão Casal React</h3>
+            <p>
+              Aplicação com React e ASP.NET Core para gestão financeira,
+              dashboard analítico e OCR voltado a organização de dados.
+            </p>
             <ul>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
+              <li>React + ASP.NET Core</li>
+              <li>Arquitetura de produto</li>
+              <li>Fluxo orientado a uso real</li>
             </ul>
-        </div>
-    </section>
-    <script src="./scripts.js"></script>
-</body>
+            <a href="https://github.com/Tognolli0/Dashboard_Gestao_Casal_React" target="_blank" rel="noreferrer">
+              Ver repositório
+            </a>
+          </article>
 
+          <article class="project-card reveal">
+            <span class="project-tag">Logística</span>
+            <h3>FormularioSetec</h3>
+            <p>
+              Sistema para logística de viagens com front-end React, API em
+              ASP.NET Core e persistência orientada a processo.
+            </p>
+            <a href="https://github.com/Tognolli0/FormularioSetec" target="_blank" rel="noreferrer">
+              Ver repositório
+            </a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-tag">Rastreabilidade</span>
+            <h3>AuditService.API</h3>
+            <p>
+              API dedicada a auditoria centralizada, com foco em logs,
+              rastreabilidade e integração entre sistemas corporativos.
+            </p>
+            <a href="https://github.com/Tognolli0/AuditService.API" target="_blank" rel="noreferrer">
+              Ver repositório
+            </a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-tag">Visão computacional</span>
+            <h3>FaceID C# + FaceONNX</h3>
+            <p>
+              Prova de conceito de biometria facial offline em C# com ONNX
+              Runtime, pensada para exploração técnica e experimentação séria.
+            </p>
+            <a href="https://github.com/Tognolli0/FaceID-CSharp---FaceONNX" target="_blank" rel="noreferrer">
+              Ver repositório
+            </a>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-tag">Dashboard</span>
+            <h3>Dashboard Interativo</h3>
+            <p>
+              Dashboard em Blazor Server com indicadores, visualização de dados
+              e base pronta para evolução em ambiente corporativo.
+            </p>
+            <a href="https://github.com/Tognolli0/Dashboard_Interativo" target="_blank" rel="noreferrer">
+              Ver repositório
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Diferenciais</p>
+          <h2>O que eu busco entregar em cada projeto.</h2>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="glass-card reveal">
+            <h3>Clareza</h3>
+            <p>Estruturas que facilitam manutenção, leitura e evolução técnica.</p>
+          </article>
+          <article class="glass-card reveal">
+            <h3>Rastreabilidade</h3>
+            <p>Logs, auditoria e contexto para entender o sistema de ponta a ponta.</p>
+          </article>
+          <article class="glass-card reveal">
+            <h3>Praticidade</h3>
+            <p>Soluções que resolvem problema real e não apenas um demo bonito.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section reveal" id="contato">
+        <div class="contact-copy">
+          <p class="eyebrow">Contato</p>
+          <h2>Vamos construir algo sólido e útil.</h2>
+          <p>
+            Se você procura alguém com foco em back-end, APIs, dados e
+            organização técnica, meu perfil e meus projetos já mostram a
+            direção. O próximo passo pode começar por uma conversa.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a
+            class="button button-primary"
+            href="https://www.linkedin.com/in/diogotognolli"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a
+            class="button button-secondary"
+            href="https://github.com/Tognolli0"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="current-year"></span> Diogo Tognolli. Portfólio profissional.</p>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
 </html>

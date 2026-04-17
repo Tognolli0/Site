@@ -1,39 +1,34 @@
-let prevButton = document.getElementById('prev');
-let nextButton = document.getElementById('next');
-let conteiner = document.querySelector('.conteiner');
-let items = conteiner.querySelectorAll('.list .item');
-let indicator = document.querySelector('.indicators');
-let dots = indicator.querySelectorAll('ul li');
-let list = conteiner.querySelector('.list');
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".site-nav");
+const reveals = document.querySelectorAll(".reveal");
+const yearNode = document.querySelector("#current-year");
 
-let active = 0
-let firstPosition = 0
-let lastPosition = items.length - 1;
+if (menuToggle && nav) {
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
 
-function setSlider() {
-    let itemOld = conteiner.querySelector('.list .item.active');
-    itemOld.classList.remove('active');
-
-    let dotsOld = indicator.querySelector('ul li.active');
-    dotsOld.classList.remove('active');
-    dots[active].classList.add('active')
-
-    indicator.querySelector('.number').innerHTML = '0' + (active + 1);
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => nav.classList.remove("open"));
+  });
 }
 
-prevButton.onclick = () => {
-    list.style.setProperty('--calculation', -1);
-    active = active - 1 < firstPosition ? lastPosition : active - 1;
-    setSlider();
-    items[active].classList.add('active');
-
+if (yearNode) {
+  yearNode.textContent = new Date().getFullYear();
 }
 
-nextButton.onclick = () => {
-    list.style.setProperty('--calculation', 1);
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.16,
+  }
+);
 
-    active = active + 1 > lastPosition ? 0 : active + 1;
-    setSlider();
-    items[active].classList.add('active');
-
-}
+reveals.forEach((element) => observer.observe(element));
