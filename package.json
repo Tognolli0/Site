@@ -20,6 +20,7 @@
   },
   "homepage": "https://tognolli0.github.io/Site/",
   "dependencies": {
+    "lucide-react": "^1.8.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"
   },
