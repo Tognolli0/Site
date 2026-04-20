@@ -195,7 +195,11 @@ function App() {
 
       <header className="topbar">
         <div className="brand">
-          <span className="brand-badge">DT</span>
+          <img
+            className="brand-avatar"
+            src={profileImage}
+            alt="Foto de Diogo Tognolli"
+          />
           <div>
             <strong>Diogo Tognolli</strong>
             <span>Backend Engineer</span>
@@ -277,6 +281,11 @@ function App() {
                 <span className="card-label">Perfil</span>
                 <h3>Diogo Tognolli</h3>
                 <p>Backend engineer focado em APIs, SQL, integrações e software com estrutura.</p>
+                <div className="profile-quick-notes">
+                  <span>APIs REST</span>
+                  <span>SQL</span>
+                  <span>Integracoes</span>
+                </div>
               </div>
 
               <div className="profile-signal-grid">
@@ -287,34 +296,36 @@ function App() {
               </div>
             </article>
 
-            <article className="code-card">
-              <div className="code-card-top">
-                <span className="status-dot" />
-                <span>engineering.signal.ts</span>
-              </div>
-              <pre>
-                <code>{`const backendProfile = {
+            <div className="hero-side-column">
+              <article className="code-card">
+                <div className="code-card-top">
+                  <span className="status-dot" />
+                  <span>engineering.signal.ts</span>
+                </div>
+                <pre>
+                  <code>{`const backendProfile = {
   focus: ["APIs", "SQL", "integracoes"],
   style: "arquitetura pragmatica",
   priority: "clareza + manutencao",
   portfolio: "prova visual + prova tecnica"
 };`}</code>
-              </pre>
-            </article>
+                </pre>
+              </article>
 
-            <div className="hero-metrics">
-              <article>
-                <strong>5</strong>
-                <span>repositorios principais curados</span>
-              </article>
-              <article>
-                <strong>70+</strong>
-                <span>certificados mapeados</span>
-              </article>
-              <article>
-                <strong>21</strong>
-                <span>modulos no bootcamp Java + AWS</span>
-              </article>
+              <div className="hero-metrics">
+                <article>
+                  <strong>5</strong>
+                  <span>repositorios principais curados</span>
+                </article>
+                <article>
+                  <strong>70+</strong>
+                  <span>certificados mapeados</span>
+                </article>
+                <article>
+                  <strong>21</strong>
+                  <span>modulos no bootcamp Java + AWS</span>
+                </article>
+              </div>
             </div>
           </div>
         </section>

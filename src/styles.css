@@ -116,17 +116,13 @@ select {
   font-size: 0.9rem;
 }
 
-.brand-badge {
-  display: grid;
-  place-items: center;
+.brand-avatar {
   width: 52px;
   height: 52px;
   border-radius: 18px;
-  background: linear-gradient(135deg, #6f46ff, #b84dff);
-  color: #f7f3ff;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  object-fit: cover;
+  object-position: center 18%;
+  border: 1px solid rgba(180, 154, 255, 0.26);
   box-shadow: 0 18px 34px rgba(111, 70, 255, 0.28);
 }
 
@@ -333,7 +329,9 @@ select {
 
 .hero-panel {
   display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
   gap: 18px;
+  align-items: stretch;
 }
 
 .profile-card,
@@ -378,7 +376,9 @@ select {
   position: relative;
   overflow: hidden;
   display: grid;
-  gap: 18px;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: 20px;
+  align-items: center;
 }
 
 .profile-card::before {
@@ -394,9 +394,9 @@ select {
 
 .profile-frame {
   position: relative;
-  width: min(100%, 360px);
+  width: min(100%, 240px);
   aspect-ratio: 1 / 1;
-  margin: 0 auto;
+  margin: 0;
   border-radius: 34px;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(111, 70, 255, 0.25), rgba(184, 77, 255, 0.1));
@@ -438,19 +438,39 @@ select {
 
 .profile-card-copy h3 {
   margin: 10px 0 8px;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  line-height: 0.96;
 }
 
 .profile-card-copy p {
   margin: 0;
   color: #a7a0c1;
-  line-height: 1.65;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.profile-quick-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.profile-quick-notes span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(180, 154, 255, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+  color: #ddd2ff;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .profile-signal-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
+  grid-column: 1 / -1;
 }
 
 .profile-signal-grid span {
@@ -498,6 +518,11 @@ select {
   line-height: 1.75;
 }
 
+.hero-side-column {
+  display: grid;
+  gap: 18px;
+}
+
 .hero-metrics {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -509,6 +534,13 @@ select {
   margin-bottom: 6px;
   font-size: 2rem;
   color: #ffffff;
+}
+
+.hero-metrics article {
+  min-height: 148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .profile-card:hover,
@@ -779,6 +811,10 @@ select {
     grid-template-columns: 1fr;
   }
 
+  .hero-panel {
+    grid-template-columns: 1fr;
+  }
+
   .profile-signal-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -804,6 +840,70 @@ select {
 
   .hero h1 {
     font-size: 3.1rem;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  .hero-panel {
+    gap: 14px;
+  }
+
+  .profile-card {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .profile-frame {
+    width: 96px;
+    border-radius: 24px;
+  }
+
+  .profile-card-copy h3 {
+    font-size: 2.1rem;
+  }
+
+  .profile-card-copy p {
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+
+  .profile-quick-notes {
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .profile-quick-notes span {
+    padding: 8px 12px;
+    font-size: 0.82rem;
+  }
+
+  .profile-signal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .code-card {
+    min-height: 0;
+  }
+
+  .code-card pre {
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  .hero-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero-metrics article {
+    min-height: 116px;
+    padding: 16px;
+  }
+
+  .hero-metrics strong {
+    font-size: 1.6rem;
   }
 
   .button {
