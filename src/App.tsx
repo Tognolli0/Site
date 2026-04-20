@@ -263,6 +263,35 @@ function App() {
                 <span>Dashboards</span>
               </div>
             </div>
+
+            <div className="hero-proof-grid">
+              <article className="hero-proof-card">
+                <span className="mini-heading">Arquitetura</span>
+                <h3>Estrutura pensada para manutencao</h3>
+                <p>
+                  APIs, persistencia e integracao organizadas com foco em clareza,
+                  evolucao e leitura tecnica consistente.
+                </p>
+              </article>
+
+              <article className="hero-proof-card">
+                <span className="mini-heading">Dados</span>
+                <h3>Base solida em SQL e rastreabilidade</h3>
+                <p>
+                  Trabalho com modelagem, persistencia, auditoria e visao
+                  operacional para solucoes mais confiaveis.
+                </p>
+              </article>
+
+              <article className="hero-proof-card">
+                <span className="mini-heading">Entrega</span>
+                <h3>Projetos com contexto real</h3>
+                <p>
+                  O portfolio foi organizado para mostrar aplicacao pratica,
+                  consistencia e potencial de crescimento profissional.
+                </p>
+              </article>
+            </div>
           </div>
 
           <div className="hero-panel">
