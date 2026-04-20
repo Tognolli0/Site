@@ -217,14 +217,13 @@ function App() {
             <span className="section-kicker">Portfolio profissional</span>
             <p className="hero-intro">backend engineer · c# · .net · sql · integracoes</p>
             <h1>
-              Software com leitura forte, arquitetura clara e
-              <span> presenca visual de verdade.</span>
+              Um portfolio com
+              <span> cara de desenvolvedor</span>, nao de template comum.
             </h1>
             <p className="hero-text">
-              Aqui o objetivo nao e parecer apenas bonito. O site foi
-              reconstruido para comunicar valor tecnico mais cedo, prender mais
-              o leitor e deixar muito claro onde voce gera impacto como
-              desenvolvedor back-end.
+              A proposta aqui e simples: posicionar voce como alguem que sabe
+              construir APIs, integrar sistemas, trabalhar com dados e pensar
+              em software com estrutura. O visual agora acompanha essa ideia.
             </p>
 
             <div className="hero-actions">
@@ -234,6 +233,17 @@ function App() {
               <a className="button button-secondary" href="#contato">
                 Entrar em contato
               </a>
+            </div>
+
+            <div className="hero-points">
+              <article>
+                <span className="mini-heading">Foco</span>
+                <strong>Back-end, APIs e integracoes</strong>
+              </article>
+              <article>
+                <span className="mini-heading">Direcao</span>
+                <strong>Leitura mais forte para recrutador e cliente</strong>
+              </article>
             </div>
 
             <div className="hero-marquee">
@@ -323,7 +333,7 @@ function App() {
         <section className="content-grid" id="servicos">
           <div className="section-heading">
             <span className="section-kicker">Como eu ajudo</span>
-            <h2>Inspirado nos melhores portfolios: menos vitrine passiva, mais clareza de oferta.</h2>
+            <h2>Mais clareza de oferta e menos seccao genérica de portfolio.</h2>
           </div>
 
           <div className="service-grid">
@@ -346,7 +356,7 @@ function App() {
         <section className="content-grid" id="projetos">
           <div className="section-heading">
             <span className="section-kicker">Projeto em destaque</span>
-            <h2>Um explorador interativo para o leitor navegar pelos melhores projetos.</h2>
+            <h2>Um explorador interativo mais forte, com cara de painel tecnico.</h2>
           </div>
 
           <div className="project-lab">
@@ -408,7 +418,7 @@ function App() {
         <section className="content-grid" id="stack">
           <div className="section-heading">
             <span className="section-kicker">Stack</span>
-            <h2>As linguagens e tecnologias entram como parte da identidade visual.</h2>
+            <h2>Linguagens e tecnologias apresentadas como mapa de trabalho.</h2>
           </div>
 
           <div className="stack-matrix">
