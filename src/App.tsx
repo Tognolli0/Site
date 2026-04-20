@@ -222,8 +222,8 @@ function App() {
             <span className="section-kicker">Portfólio profissional</span>
             <p className="hero-intro">desenvolvedor back-end · c# · .net · sql · integrações</p>
             <h1>
-              Engenharia back-end com
-              <span> foco em solidez técnica</span> e entrega real.
+              Engenharia back-end com{" "}
+              <span>foco em solidez técnica</span> e entrega real.
             </h1>
             <p className="hero-text">
               Este portfólio foi estruturado para apresentar, com clareza, minha
