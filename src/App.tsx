@@ -14,6 +14,7 @@ import {
   ShieldCheck,
   Workflow,
 } from "lucide-react";
+import profileImage from "./assets/diogo-profile.jfif";
 
 type Project = {
   title: string;
@@ -261,6 +262,31 @@ function App() {
           </div>
 
           <div className="hero-panel">
+            <article className="profile-card">
+              <div className="profile-frame">
+                <img
+                  className="profile-photo"
+                  src={profileImage}
+                  alt="Foto de Diogo Tognolli"
+                />
+                <div className="profile-ring profile-ring-one" />
+                <div className="profile-ring profile-ring-two" />
+              </div>
+
+              <div className="profile-card-copy">
+                <span className="card-label">Perfil</span>
+                <h3>Diogo Tognolli</h3>
+                <p>Backend engineer focado em APIs, SQL, integrações e software com estrutura.</p>
+              </div>
+
+              <div className="profile-signal-grid">
+                <span>C#</span>
+                <span>.NET</span>
+                <span>SQL</span>
+                <span>APIs</span>
+              </div>
+            </article>
+
             <article className="code-card">
               <div className="code-card-top">
                 <span className="status-dot" />

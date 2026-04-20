@@ -336,6 +336,7 @@ select {
   gap: 18px;
 }
 
+.profile-card,
 .code-card,
 .about-spotlight,
 .feature-card,
@@ -357,6 +358,7 @@ select {
 }
 
 .code-card,
+.profile-card,
 .about-spotlight,
 .feature-card,
 .service-card,
@@ -370,6 +372,96 @@ select {
 .code-card {
   position: relative;
   overflow: hidden;
+}
+
+.profile-card {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 18px;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  inset: auto -20% -30% auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(111, 70, 255, 0.26), transparent 65%);
+  pointer-events: none;
+}
+
+.profile-frame {
+  position: relative;
+  width: min(100%, 360px);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  border-radius: 34px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(111, 70, 255, 0.25), rgba(184, 77, 255, 0.1));
+  border: 1px solid rgba(180, 154, 255, 0.18);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+.profile-photo {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.02);
+  transform: scale(1.02);
+}
+
+.profile-ring {
+  position: absolute;
+  inset: auto;
+  border-radius: 999px;
+  border: 1px solid rgba(216, 178, 255, 0.28);
+  pointer-events: none;
+}
+
+.profile-ring-one {
+  top: 20px;
+  right: 18px;
+  width: 92px;
+  height: 92px;
+}
+
+.profile-ring-two {
+  bottom: 20px;
+  left: 18px;
+  width: 62px;
+  height: 62px;
+}
+
+.profile-card-copy h3 {
+  margin: 10px 0 8px;
+  font-size: 1.4rem;
+}
+
+.profile-card-copy p {
+  margin: 0;
+  color: #a7a0c1;
+  line-height: 1.65;
+}
+
+.profile-signal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.profile-signal-grid span {
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(180, 154, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  color: #f3efff;
+  font-weight: 700;
 }
 
 .code-card::after {
@@ -417,6 +509,19 @@ select {
   margin-bottom: 6px;
   font-size: 2rem;
   color: #ffffff;
+}
+
+.profile-card:hover,
+.code-card:hover,
+.service-card:hover,
+.feature-card:hover,
+.project-preview:hover,
+.stack-card:hover,
+.education-preview:hover,
+.timeline-item:hover {
+  transform: translateY(-4px);
+  transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+  border-color: rgba(194, 141, 255, 0.22);
 }
 
 .content-grid {
@@ -672,6 +777,10 @@ select {
   .contact-links,
   .hero-points {
     grid-template-columns: 1fr;
+  }
+
+  .profile-signal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
