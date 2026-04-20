@@ -166,7 +166,7 @@ const stackGroups = [
 const timeline = [
   {
     title: "Posicionamento",
-    body: "Engenheiro de back-end com foco em APIs, SQL, integrações e consistência técnica.",
+    body: "Desenvolvedor back-end com foco em APIs, SQL, integrações e consistência técnica.",
   },
   {
     title: "Entrega",
@@ -202,7 +202,7 @@ function App() {
           />
           <div>
             <strong>Diogo Tognolli</strong>
-            <span>Backend Engineer</span>
+            <span>Desenvolvedor Back-end</span>
           </div>
         </div>
 
@@ -220,7 +220,7 @@ function App() {
         <section className="hero">
           <div className="hero-copy">
             <span className="section-kicker">Portfólio profissional</span>
-            <p className="hero-intro">backend engineer · c# · .net · sql · integrações</p>
+            <p className="hero-intro">desenvolvedor back-end · c# · .net · sql · integrações</p>
             <h1>
               Engenharia back-end com
               <span> foco em solidez técnica</span> e entrega real.
@@ -281,7 +281,7 @@ function App() {
                 <span className="card-label">Perfil</span>
                 <h3>Diogo Tognolli</h3>
                 <p>
-                  Backend engineer com foco em APIs, SQL, integrações e software
+                  Desenvolvedor back-end com foco em APIs, SQL, integrações e software
                   orientado à manutenção, clareza e evolução contínua.
                 </p>
                 <div className="profile-quick-notes">
@@ -303,7 +303,7 @@ function App() {
               <article className="code-card">
                 <div className="code-card-top">
                   <span className="status-dot" />
-                  <span>engineering.signal.ts</span>
+                  <span>backend.signal.ts</span>
                 </div>
                 <pre>
                   <code>{`const backendProfile = {
