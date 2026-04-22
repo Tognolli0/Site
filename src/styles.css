@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -42,7 +46,7 @@ select {
 
 .app-shell {
   position: relative;
-  width: min(1260px, calc(100% - 32px));
+  width: min(1260px, calc(100% - 24px));
   margin: 0 auto;
   padding-bottom: 64px;
   overflow: clip;
@@ -133,6 +137,7 @@ select {
   flex-wrap: wrap;
   gap: 18px;
   color: #a8a2c7;
+  min-width: 0;
 }
 
 .nav a {
@@ -833,6 +838,7 @@ select {
 .project-showcase-stream div {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 10px 12px;
   border-radius: 16px;
@@ -985,7 +991,7 @@ select {
   }
 
   .hero-proof-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .project-showcase-metrics {
@@ -1003,30 +1009,104 @@ select {
   }
 }
 
+@media (max-width: 900px) {
+  .topbar {
+    position: static;
+    margin-top: 12px;
+    padding: 14px 16px;
+  }
+
+  .nav {
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding-top: 40px;
+  }
+
+  .hero-copy,
+  .hero-panel {
+    width: 100%;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(2.6rem, 9vw, 4.4rem);
+  }
+
+  .hero-text,
+  .hero-text-compact {
+    max-width: 100%;
+  }
+
+  .hero-points {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-showcase-metrics,
+  .hero-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cta-section {
+    padding: 24px;
+  }
+}
+
 @media (max-width: 760px) {
   .app-shell {
-    width: min(100% - 20px, 1260px);
+    width: calc(100% - 16px);
   }
 
   .topbar {
     flex-direction: column;
     align-items: flex-start;
+    gap: 16px;
+    border-radius: 20px;
   }
 
   .nav {
-    gap: 12px;
+    gap: 14px;
   }
 
   .hero {
-    padding-top: 56px;
+    padding-top: 24px;
   }
 
   .hero h1 {
-    font-size: 2.8rem;
+    font-size: clamp(2.2rem, 12vw, 3rem);
+    line-height: 0.98;
   }
 
   .brand {
     width: 100%;
+  }
+
+  .brand strong {
+    font-size: 0.96rem;
+  }
+
+  .brand span {
+    font-size: 0.84rem;
   }
 
   .hero-panel {
@@ -1077,11 +1157,11 @@ select {
   }
 
   .hero-metrics {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .hero-metrics article {
-    min-height: 112px;
+    min-height: 0;
     padding: 14px;
   }
 
@@ -1095,5 +1175,105 @@ select {
 
   .button {
     width: 100%;
+  }
+
+  .project-top {
+    flex-direction: column;
+  }
+
+  .project-top a {
+    width: fit-content;
+  }
+
+  .project-showcase {
+    padding: 16px;
+  }
+
+  .project-showcase-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-step {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-shell {
+    width: calc(100% - 12px);
+  }
+
+  .topbar {
+    padding: 12px 14px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .section-kicker,
+  .card-label,
+  .project-tag,
+  .mini-heading {
+    font-size: 0.68rem;
+    padding: 7px 10px;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .button {
+    min-height: 50px;
+    padding: 0 16px;
+    border-radius: 16px;
+  }
+
+  .profile-card,
+  .code-card,
+  .about-spotlight,
+  .feature-card,
+  .service-card,
+  .project-tab,
+  .project-preview,
+  .stack-card,
+  .education-tab,
+  .education-preview,
+  .timeline-item,
+  .cta-section,
+  .career-card,
+  .resource-card {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .profile-card-copy h3,
+  .project-preview h3,
+  .education-preview h3 {
+    font-size: 1.45rem;
+  }
+
+  .hero-proof-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .project-showcase-stream code {
+    font-size: 0.8rem;
   }
 }
