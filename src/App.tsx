@@ -16,6 +16,7 @@ import {
   Radar,
   ServerCog,
   ShieldCheck,
+  Sparkles,
   Target,
   Workflow,
 } from "lucide-react";
@@ -237,21 +238,26 @@ const timeline = [
   },
 ];
 
-const careerHighlights = [
-  {
-    icon: Target,
-    title: "Objetivo profissional",
-    text: "Atuar em desenvolvimento back-end, construindo APIs, integracoes e estruturas de dados com foco em confiabilidade e crescimento tecnico.",
-  },
+const experiences = [
   {
     icon: BriefcaseBusiness,
-    title: "Como entrego valor",
-    text: "Organizo servicos, persistencia e regras de negocio para que a solucao seja clara, sustentavel e facil de evoluir.",
+    title: "Atuacao independente",
+    text: "Estruturacao de servicos e solucao de problemas com foco em suporte tecnico, organizacao de processos e evolucao profissional aplicada.",
+  },
+  {
+    icon: ServerCog,
+    title: "Experiencia em projetos back-end",
+    text: "Desenvolvimento de APIs, persistencia, auditoria, integracoes e leitura operacional em projetos que reforcam consistencia tecnica e capacidade de entrega.",
   },
   {
     icon: GraduationCap,
-    title: "Momento de carreira",
-    text: "Consolido meu posicionamento em back-end combinando estudos, projetos aplicados e repertorio tecnico em cloud, dados e software.",
+    title: "Formacao aplicada ao mercado",
+    text: "Trilhas em C#, Java, cloud, banco de dados e fundamentos de software que sustentam uma evolucao pratica em desenvolvimento back-end.",
+  },
+  {
+    icon: Sparkles,
+    title: "Produtos e dashboards",
+    text: "Experiencias com dashboards, OCR, visualizacao e integracao entre camadas para ampliar a leitura de produto sem perder o foco tecnico.",
   },
 ];
 
@@ -312,7 +318,7 @@ function App() {
 
         <nav className="nav">
           <a href="#sobre">Sobre</a>
-          <a href="#atuacao">Atuacao</a>
+          <a href="#experiencias">Experiencias</a>
           <a href="#projetos">Projetos</a>
           <a href="#certificacoes">Certificacoes</a>
           <a href="#recursos">Recursos</a>
@@ -502,14 +508,14 @@ function App() {
           </div>
         </section>
 
-        <section className="content-grid" id="atuacao">
+        <section className="content-grid" id="experiencias">
           <div className="section-heading">
-            <span className="section-kicker">Atuacao profissional</span>
-            <h2>Uma leitura mais clara de objetivo, momento de carreira e entrega tecnica.</h2>
+            <span className="section-kicker">Experiencias</span>
+            <h2>Vivencias que conectam estudo, entrega pratica e construcao tecnica.</h2>
           </div>
 
           <div className="career-grid">
-            {careerHighlights.map((item) => {
+            {experiences.map((item) => {
               const Icon = item.icon;
 
               return (
