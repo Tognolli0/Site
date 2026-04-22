@@ -1,17 +1,22 @@
 import { useMemo, useState } from "react";
 import {
   ArrowRight,
+  Award,
   BadgeCheck,
   Blocks,
   BrainCircuit,
   BriefcaseBusiness,
   Database,
+  ExternalLink,
+  FileText,
   FolderGit2,
+  GraduationCap,
   LineChart,
   Mail,
   Radar,
   ServerCog,
   ShieldCheck,
+  Target,
   Workflow,
 } from "lucide-react";
 import profileImage from "./assets/diogo-profile.jfif";
@@ -22,6 +27,9 @@ type Project = {
   description: string;
   stack: string[];
   impact: string[];
+  previewTitle: string;
+  previewMetrics: Array<{ label: string; value: string }>;
+  previewRows: string[];
   href: string;
 };
 
@@ -38,6 +46,13 @@ type Service = {
   description: string;
 };
 
+type ResourceLink = {
+  icon: typeof FileText;
+  label: string;
+  description: string;
+  href: string;
+};
+
 const projects: Project[] = [
   {
     title: "AuditService.API",
@@ -49,6 +64,17 @@ const projects: Project[] = [
       "Centraliza eventos com contexto de negocio",
       "Fortalece a rastreabilidade entre fluxos criticos",
       "Reforca seu posicionamento em back-end",
+    ],
+    previewTitle: "Painel de auditoria e eventos",
+    previewMetrics: [
+      { label: "Fluxos", value: "24" },
+      { label: "Logs", value: "1.2k" },
+      { label: "Alertas", value: "03" },
+    ],
+    previewRows: [
+      "event.audit.created",
+      "event.integration.synced",
+      "event.trace.completed",
     ],
     href: "https://github.com/Tognolli0/AuditService.API",
   },
@@ -63,6 +89,17 @@ const projects: Project[] = [
       "Conecta API, dados e interface com clareza",
       "Passa imagem de entrega completa e consistente",
     ],
+    previewTitle: "Fluxo de solicitacao e aprovacao",
+    previewMetrics: [
+      { label: "Solicitacoes", value: "58" },
+      { label: "Pendentes", value: "09" },
+      { label: "Aprovadas", value: "44" },
+    ],
+    previewRows: [
+      "solicitacao.logistica.open",
+      "solicitacao.aprovacao.pending",
+      "solicitacao.viagem.closed",
+    ],
     href: "https://github.com/Tognolli0/FormularioSetec",
   },
   {
@@ -76,6 +113,17 @@ const projects: Project[] = [
       "Adiciona OCR como diferencial tecnico",
       "Amplia o apelo visual e funcional do portfolio",
     ],
+    previewTitle: "Dashboard com OCR e rotina operacional",
+    previewMetrics: [
+      { label: "Leituras", value: "312" },
+      { label: "OCR", value: "Ativo" },
+      { label: "Widgets", value: "08" },
+    ],
+    previewRows: [
+      "ocr.capture.processed",
+      "dashboard.metric.updated",
+      "finance.summary.generated",
+    ],
     href: "https://github.com/Tognolli0/Dashboard_Gestao_Casal_React",
   },
   {
@@ -88,6 +136,17 @@ const projects: Project[] = [
       "Mostra variedade sem perder o foco principal",
       "Evidencia capacidade de leitura de indicadores",
       "Torna o portfolio mais completo e estrategico",
+    ],
+    previewTitle: "Indicadores e leitura gerencial",
+    previewMetrics: [
+      { label: "KPIs", value: "12" },
+      { label: "Cards", value: "06" },
+      { label: "Status", value: "OK" },
+    ],
+    previewRows: [
+      "kpi.revenue.updated",
+      "kpi.risk.monitoring",
+      "kpi.dashboard.rendered",
     ],
     href: "https://github.com/Tognolli0/Dashboard_Interativo",
   },
@@ -178,6 +237,51 @@ const timeline = [
   },
 ];
 
+const careerHighlights = [
+  {
+    icon: Target,
+    title: "Objetivo profissional",
+    text: "Atuar em desenvolvimento back-end, construindo APIs, integracoes e estruturas de dados com foco em confiabilidade e crescimento tecnico.",
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Como entrego valor",
+    text: "Organizo servicos, persistencia e regras de negocio para que a solucao seja clara, sustentavel e facil de evoluir.",
+  },
+  {
+    icon: GraduationCap,
+    title: "Momento de carreira",
+    text: "Consolido meu posicionamento em back-end combinando estudos, projetos aplicados e repertorio tecnico em cloud, dados e software.",
+  },
+];
+
+const resourceLinks: ResourceLink[] = [
+  {
+    icon: FileText,
+    label: "Curriculo web",
+    description: "Versao resumida do meu perfil profissional e das minhas competencias.",
+    href: "/Site/curriculo-diogo-tognolli.html",
+  },
+  {
+    icon: Award,
+    label: "Bootcamp Java + AWS",
+    description: "Certificacao com trilha focada em fundamentos de back-end e cloud.",
+    href: "/Site/docs/certificados/bootcamp-java-aws.pdf",
+  },
+  {
+    icon: Award,
+    label: "C# avancado",
+    description: "Certificado de aprofundamento em linguagem C# e base de programacao.",
+    href: "/Site/docs/certificados/csharp-avancado.pdf",
+  },
+  {
+    icon: Award,
+    label: "Fundamentos da AWS",
+    description: "Certificacao voltada a fundamentos de nuvem e infraestrutura.",
+    href: "/Site/docs/certificados/aws-fundamentos.pdf",
+  },
+];
+
 function App() {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
   const [selectedTrack, setSelectedTrack] = useState(certificateTracks[0]);
@@ -208,10 +312,10 @@ function App() {
 
         <nav className="nav">
           <a href="#sobre">Sobre</a>
-          <a href="#servicos">Como ajudo</a>
+          <a href="#atuacao">Atuacao</a>
           <a href="#projetos">Projetos</a>
-          <a href="#stack">Stack</a>
           <a href="#certificacoes">Certificacoes</a>
+          <a href="#recursos">Recursos</a>
           <a href="#contato">Contato</a>
         </nav>
       </header>
@@ -222,28 +326,27 @@ function App() {
             <span className="section-kicker">Portfolio profissional</span>
             <p className="hero-intro">desenvolvedor back-end · c# · .net · sql · integracoes</p>
             <h1>
-              Desenvolvimento back-end com{" "}
-              <span>foco em solidez tecnica</span> e entrega real.
+              Back-end para APIs,
+              <span> dados e integracoes</span>.
             </h1>
-            <p className="hero-text">
-              Este portfolio foi estruturado para apresentar, com clareza, minha
-              capacidade de projetar APIs, integrar sistemas, trabalhar com dados
-              e construir software com base tecnica consistente.
+            <p className="hero-text hero-text-compact">
+              Apresento projetos, formacao tecnica e uma leitura clara de como penso
+              software: estrutura, manutencao, consistencia e entrega aplicada.
             </p>
 
             <div className="hero-actions">
               <a className="button button-primary" href="#projetos">
                 Explorar projetos
               </a>
-              <a className="button button-secondary" href="#contato">
-                Entrar em contato
+              <a className="button button-secondary" href="#recursos">
+                Ver curriculo e certificados
               </a>
             </div>
 
             <div className="hero-points">
               <article>
                 <span className="mini-heading">Foco</span>
-                <strong>Back-end, APIs, integracoes e persistencia</strong>
+                <strong>APIs, persistencia, integracoes e rastreabilidade</strong>
               </article>
               <article>
                 <span className="mini-heading">Direcao</span>
@@ -278,8 +381,8 @@ function App() {
                 <span className="mini-heading">Dados</span>
                 <h3>Base solida em SQL e rastreabilidade</h3>
                 <p>
-                  Trabalho com modelagem, persistencia, auditoria e visao
-                  operacional para solucoes mais confiaveis.
+                  Trabalho com modelagem, persistencia, auditoria e visao operacional
+                  para solucoes mais confiaveis.
                 </p>
               </article>
 
@@ -399,6 +502,29 @@ function App() {
           </div>
         </section>
 
+        <section className="content-grid" id="atuacao">
+          <div className="section-heading">
+            <span className="section-kicker">Atuacao profissional</span>
+            <h2>Uma leitura mais clara de objetivo, momento de carreira e entrega tecnica.</h2>
+          </div>
+
+          <div className="career-grid">
+            {careerHighlights.map((item) => {
+              const Icon = item.icon;
+
+              return (
+                <article key={item.title} className="career-card">
+                  <div className="service-icon">
+                    <Icon size={22} />
+                  </div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+
         <section className="content-grid" id="servicos">
           <div className="section-heading">
             <span className="section-kicker">Como eu ajudo</span>
@@ -425,7 +551,7 @@ function App() {
         <section className="content-grid" id="projetos">
           <div className="section-heading">
             <span className="section-kicker">Projetos em destaque</span>
-            <h2>Casos selecionados para demonstrar capacidade tecnica e aplicacao pratica.</h2>
+            <h2>Casos selecionados para demonstrar capacidade tecnica, leitura visual e aplicacao pratica.</h2>
           </div>
 
           <div className="project-lab">
@@ -456,6 +582,29 @@ function App() {
                 <a href={selectedProject.href} target="_blank" rel="noreferrer">
                   Abrir no GitHub <ArrowRight size={16} />
                 </a>
+              </div>
+
+              <div className="project-showcase">
+                <div className="project-showcase-top">
+                  <span>{selectedProject.previewTitle}</span>
+                  <ExternalLink size={16} />
+                </div>
+                <div className="project-showcase-metrics">
+                  {selectedProject.previewMetrics.map((item) => (
+                    <article key={item.label}>
+                      <strong>{item.value}</strong>
+                      <span>{item.label}</span>
+                    </article>
+                  ))}
+                </div>
+                <div className="project-showcase-stream">
+                  {selectedProject.previewRows.map((row) => (
+                    <div key={row}>
+                      <span className="stream-dot" />
+                      <code>{row}</code>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               <h3>{selectedProject.title}</h3>
@@ -554,6 +703,38 @@ function App() {
           </div>
         </section>
 
+        <section className="content-grid" id="recursos">
+          <div className="section-heading">
+            <span className="section-kicker">Recursos</span>
+            <h2>Links diretos para curriculo e certificacoes mais relevantes.</h2>
+          </div>
+
+          <div className="resource-grid">
+            {resourceLinks.map((resource) => {
+              const Icon = resource.icon;
+
+              return (
+                <a
+                  key={resource.label}
+                  className="resource-card"
+                  href={resource.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="resource-card-top">
+                    <div className="service-icon compact">
+                      <Icon size={18} />
+                    </div>
+                    <ExternalLink size={16} />
+                  </div>
+                  <h3>{resource.label}</h3>
+                  <p>{resource.description}</p>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+
         <section className="content-grid timeline-section">
           <div className="section-heading">
             <span className="section-kicker">Leitura rapida</span>
@@ -608,12 +789,12 @@ function App() {
             </a>
             <a
               className="contact-link"
-              href="https://github.com/Tognolli0"
+              href="/Site/curriculo-diogo-tognolli.html"
               target="_blank"
               rel="noreferrer"
             >
-              <FolderGit2 size={18} />
-              <span>Repositorios</span>
+              <FileText size={18} />
+              <span>Curriculo</span>
             </a>
           </div>
         </section>
