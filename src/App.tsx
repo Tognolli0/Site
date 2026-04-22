@@ -43,12 +43,12 @@ const projects: Project[] = [
     title: "AuditService.API",
     tag: "Observabilidade",
     description:
-      "API voltada à auditoria centralizada, rastreabilidade de eventos e leitura operacional entre diferentes sistemas.",
+      "API voltada a auditoria centralizada, rastreabilidade de eventos e leitura operacional entre diferentes sistemas.",
     stack: ["C#", ".NET", "Logs", "SQL"],
     impact: [
-      "Centraliza eventos com contexto de negócio",
-      "Fortalece a rastreabilidade entre fluxos críticos",
-      "Reforça seu posicionamento em back-end",
+      "Centraliza eventos com contexto de negocio",
+      "Fortalece a rastreabilidade entre fluxos criticos",
+      "Reforca seu posicionamento em back-end",
     ],
     href: "https://github.com/Tognolli0/AuditService.API",
   },
@@ -56,38 +56,38 @@ const projects: Project[] = [
     title: "FormularioSetec",
     tag: "Caso real",
     description:
-      "Sistema para logística de viagens com API em ASP.NET Core, persistência estruturada e interface conectada ao processo.",
+      "Sistema para logistica de viagens com API em ASP.NET Core, persistencia estruturada e interface conectada ao processo.",
     stack: ["ASP.NET Core", "React", "PostgreSQL"],
     impact: [
-      "Apresenta um cenário de uso concreto",
+      "Apresenta um cenario de uso concreto",
       "Conecta API, dados e interface com clareza",
       "Passa imagem de entrega completa e consistente",
     ],
     href: "https://github.com/Tognolli0/FormularioSetec",
   },
   {
-    title: "Dashboard Gestão Casal React",
+    title: "Dashboard Gestao Casal React",
     tag: "Produto",
     description:
-      "Aplicação com dashboard, OCR e arquitetura full stack pensada para demonstrar visão de produto e evolução técnica.",
+      "Aplicacao com dashboard, OCR e arquitetura full stack pensada para demonstrar visao de produto e evolucao tecnica.",
     stack: ["React", "ASP.NET Core", "OCR"],
     impact: [
       "Une produto e engenharia em uma mesma entrega",
-      "Adiciona OCR como diferencial técnico",
-      "Amplia o apelo visual e funcional do portfólio",
+      "Adiciona OCR como diferencial tecnico",
+      "Amplia o apelo visual e funcional do portfolio",
     ],
     href: "https://github.com/Tognolli0/Dashboard_Gestao_Casal_React",
   },
   {
     title: "Dashboard Interativo",
-    tag: "Visualização",
+    tag: "Visualizacao",
     description:
-      "Dashboard em Blazor Server com indicadores, leitura visual clara e base para integração em contexto corporativo.",
+      "Dashboard em Blazor Server com indicadores, leitura visual clara e base para integracao em contexto corporativo.",
     stack: ["Blazor", ".NET", "Dashboards"],
     impact: [
       "Mostra variedade sem perder o foco principal",
       "Evidencia capacidade de leitura de indicadores",
-      "Torna o portfólio mais completo e estratégico",
+      "Torna o portfolio mais completo e estrategico",
     ],
     href: "https://github.com/Tognolli0/Dashboard_Interativo",
   },
@@ -98,28 +98,28 @@ const certificateTracks: CertificateTrack[] = [
     title: "Back-end e APIs",
     issuer: "Bradesco + Bootcamp CI&T",
     summary:
-      "Formação em C#, Java, Swagger, tratamento de exceções, orientação a objetos e fundamentos para serviços e APIs.",
+      "Formacao em C#, Java, Swagger, tratamento de excecoes, orientacao a objetos e fundamentos para servicos e APIs.",
     focus: ["C#", "Java", "Swagger", "OOP"],
   },
   {
-    title: "Dados e persistência",
+    title: "Dados e persistencia",
     issuer: "IFRS + Bradesco + AWS",
     summary:
-      "Base em banco de dados, administração, armazenamento, SQL e estruturação de persistência aplicada.",
-    focus: ["SQL", "Persistência", "Administração", "Armazenamento"],
+      "Base em banco de dados, administracao, armazenamento, SQL e estruturacao de persistencia aplicada.",
+    focus: ["SQL", "Persistencia", "Administracao", "Armazenamento"],
   },
   {
     title: "Cloud e infraestrutura",
     issuer: "AWS + SENAI",
     summary:
-      "Fundamentos de nuvem, redes, segurança, monitoramento e infraestrutura para software moderno.",
-    focus: ["Cloud", "Redes", "Segurança", "Monitoramento"],
+      "Fundamentos de nuvem, redes, seguranca, monitoramento e infraestrutura para software moderno.",
+    focus: ["Cloud", "Redes", "Seguranca", "Monitoramento"],
   },
   {
-    title: "Formação complementar",
+    title: "Formacao complementar",
     issuer: "FIAP + SENAI + Udemy",
     summary:
-      "Trilhas em JavaScript, Python, blockchain, LGPD e outras frentes que ampliam repertório técnico e visão de mercado.",
+      "Trilhas em JavaScript, Python, blockchain, LGPD e outras frentes que ampliam repertorio tecnico e visao de mercado.",
     focus: ["JavaScript", "Python", "Blockchain", "LGPD"],
   },
 ];
@@ -127,33 +127,33 @@ const certificateTracks: CertificateTrack[] = [
 const services: Service[] = [
   {
     icon: ServerCog,
-    title: "Desenho de APIs e regras de negócio",
+    title: "Desenho de APIs e regras de negocio",
     description:
-      "Transformo necessidades reais em contratos claros, persistência confiável e estruturas prontas para manutenção e evolução.",
+      "Transformo necessidades reais em contratos claros, persistencia confiavel e estruturas prontas para manutencao e evolucao.",
   },
   {
     icon: ShieldCheck,
     title: "Observabilidade e rastreabilidade",
     description:
-      "Penso em logs, auditoria e leitura operacional desde o início para aumentar previsibilidade e confiança no sistema.",
+      "Penso em logs, auditoria e leitura operacional desde o inicio para aumentar previsibilidade e confianca no sistema.",
   },
   {
     icon: Workflow,
-    title: "Integração entre camadas e produto",
+    title: "Integracao entre camadas e produto",
     description:
-      "Mesmo com foco em back-end, estruturo a solução para conversar bem com interface, processo e objetivos de negócio.",
+      "Mesmo com foco em back-end, estruturo a solucao para conversar bem com interface, processo e objetivos de negocio.",
   },
 ];
 
 const stackGroups = [
   {
     icon: BrainCircuit,
-    title: "Núcleo back-end",
+    title: "Nucleo back-end",
     items: ["C#", ".NET", "ASP.NET Core", "Dapper", "Entity Framework"],
   },
   {
     icon: Database,
-    title: "Dados e persistência",
+    title: "Dados e persistencia",
     items: ["SQL Server", "PostgreSQL", "SQLite", "Modelagem", "Auditoria"],
   },
   {
@@ -166,15 +166,15 @@ const stackGroups = [
 const timeline = [
   {
     title: "Posicionamento",
-    body: "Desenvolvedor back-end com foco em APIs, SQL, integrações e consistência técnica.",
+    body: "Desenvolvedor back-end com foco em APIs, SQL, integracoes e consistencia tecnica.",
   },
   {
     title: "Entrega",
-    body: "Projetos curados para demonstrar aplicação prática, organização e qualidade de construção.",
+    body: "Projetos curados para demonstrar aplicacao pratica, organizacao e qualidade de construcao.",
   },
   {
-    title: "Formação",
-    body: "Evolução contínua em cloud, dados, C#, Java, web e fundamentos sólidos de software.",
+    title: "Formacao",
+    body: "Evolucao continua em cloud, dados, C#, Java, web e fundamentos solidos de software.",
   },
 ];
 
@@ -211,7 +211,7 @@ function App() {
           <a href="#servicos">Como ajudo</a>
           <a href="#projetos">Projetos</a>
           <a href="#stack">Stack</a>
-          <a href="#certificacoes">Certificações</a>
+          <a href="#certificacoes">Certificacoes</a>
           <a href="#contato">Contato</a>
         </nav>
       </header>
@@ -219,16 +219,16 @@ function App() {
       <main>
         <section className="hero">
           <div className="hero-copy">
-            <span className="section-kicker">Portfólio profissional</span>
-            <p className="hero-intro">desenvolvedor back-end · c# · .net · sql · integrações</p>
+            <span className="section-kicker">Portfolio profissional</span>
+            <p className="hero-intro">desenvolvedor back-end · c# · .net · sql · integracoes</p>
             <h1>
-              Engenharia back-end com{" "}
-              <span>foco em solidez técnica</span> e entrega real.
+              Desenvolvimento back-end com{" "}
+              <span>foco em solidez tecnica</span> e entrega real.
             </h1>
             <p className="hero-text">
-              Este portfólio foi estruturado para apresentar, com clareza, minha
+              Este portfolio foi estruturado para apresentar, com clareza, minha
               capacidade de projetar APIs, integrar sistemas, trabalhar com dados
-              e construir software com base técnica consistente.
+              e construir software com base tecnica consistente.
             </p>
 
             <div className="hero-actions">
@@ -243,10 +243,10 @@ function App() {
             <div className="hero-points">
               <article>
                 <span className="mini-heading">Foco</span>
-                <strong>Back-end, APIs, integrações e persistência</strong>
+                <strong>Back-end, APIs, integracoes e persistencia</strong>
               </article>
               <article>
-                <span className="mini-heading">Direção</span>
+                <span className="mini-heading">Direcao</span>
                 <strong>Leitura profissional para recrutadores e clientes</strong>
               </article>
             </div>
@@ -255,9 +255,9 @@ function App() {
               <div className="hero-marquee-track">
                 <span>APIs REST</span>
                 <span>ASP.NET Core</span>
-                <span>SQL e persistência</span>
+                <span>SQL e persistencia</span>
                 <span>Auditoria</span>
-                <span>Integrações</span>
+                <span>Integracoes</span>
                 <span>Back-end</span>
                 <span>Observabilidade</span>
                 <span>Dashboards</span>
@@ -310,13 +310,13 @@ function App() {
                 <span className="card-label">Perfil</span>
                 <h3>Diogo Tognolli</h3>
                 <p>
-                  Desenvolvedor back-end com foco em APIs, SQL, integrações e software
-                  orientado à manutenção, clareza e evolução contínua.
+                  Desenvolvedor back-end com foco em APIs, SQL, integracoes e software
+                  orientado a manutencao, clareza e evolucao continua.
                 </p>
                 <div className="profile-quick-notes">
                   <span>APIs REST</span>
                   <span>SQL</span>
-                  <span>Integrações</span>
+                  <span>Integracoes</span>
                 </div>
               </div>
 
@@ -336,10 +336,10 @@ function App() {
                 </div>
                 <pre>
                   <code>{`const backendProfile = {
-  focus: ["APIs", "SQL", "integrações"],
-  style: "arquitetura pragmática",
-  priority: "clareza + manutenção",
-  portfolio: "prova visual + prova técnica"
+  focus: ["APIs", "SQL", "integracoes"],
+  style: "arquitetura pragmatica",
+  priority: "clareza + manutencao",
+  portfolio: "prova visual + prova tecnica"
 };`}</code>
                 </pre>
               </article>
@@ -347,7 +347,7 @@ function App() {
               <div className="hero-metrics">
                 <article>
                   <strong>5</strong>
-                  <span>repositórios principais curados</span>
+                  <span>repositorios principais curados</span>
                 </article>
                 <article>
                   <strong>70+</strong>
@@ -355,7 +355,7 @@ function App() {
                 </article>
                 <article>
                   <strong>21</strong>
-                  <span>módulos no bootcamp Java + AWS</span>
+                  <span>modulos no bootcamp Java + AWS</span>
                 </article>
               </div>
             </div>
@@ -365,35 +365,35 @@ function App() {
         <section className="content-grid" id="sobre">
           <div className="section-heading">
             <span className="section-kicker">Leitura inicial</span>
-            <h2>Presença visual forte, posicionamento técnico claro e mensagem objetiva.</h2>
+            <h2>Presenca visual forte, posicionamento tecnico claro e mensagem objetiva.</h2>
           </div>
 
           <div className="signal-layout">
             <article className="about-spotlight">
               <span className="card-label">Posicionamento</span>
-              <h3>Back-end com foco em engenharia, contexto de negócio e manutenção.</h3>
+              <h3>Back-end com foco em engenharia, contexto de negocio e manutencao.</h3>
               <p>
-                O portfólio foi organizado para comunicar maturidade técnica,
-                capacidade de integração, leitura de processo e construção de
-                soluções com estrutura, em vez de parecer apenas mais um site pessoal.
+                O portfolio foi organizado para comunicar maturidade tecnica,
+                capacidade de integracao, leitura de processo e construcao de
+                solucoes com estrutura, em vez de parecer apenas mais um site pessoal.
               </p>
             </article>
 
             <div className="signal-cards">
               <article className="feature-card">
                 <Radar size={22} />
-                <h3>Visão de sistema</h3>
-                <p>Leitura de regra, operação e manutenção desde o desenho da solução.</p>
+                <h3>Visao de sistema</h3>
+                <p>Leitura de regra, operacao e manutencao desde o desenho da solucao.</p>
               </article>
               <article className="feature-card">
                 <LineChart size={22} />
                 <h3>Prova de valor</h3>
-                <p>Projetos e formação organizados para transmitir confiança logo no início.</p>
+                <p>Projetos e formacao organizados para transmitir confianca logo no inicio.</p>
               </article>
               <article className="feature-card">
                 <BriefcaseBusiness size={22} />
                 <h3>Perfil profissional</h3>
-                <p>Comunicação mais alinhada a recrutadores, clientes e oportunidades reais.</p>
+                <p>Comunicacao mais alinhada a recrutadores, clientes e oportunidades reais.</p>
               </article>
             </div>
           </div>
@@ -402,7 +402,7 @@ function App() {
         <section className="content-grid" id="servicos">
           <div className="section-heading">
             <span className="section-kicker">Como eu ajudo</span>
-            <h2>Uma apresentação mais objetiva do que entrego e como penso software.</h2>
+            <h2>Uma apresentacao mais objetiva do que entrego e de como penso software.</h2>
           </div>
 
           <div className="service-grid">
@@ -425,7 +425,7 @@ function App() {
         <section className="content-grid" id="projetos">
           <div className="section-heading">
             <span className="section-kicker">Projetos em destaque</span>
-            <h2>Casos selecionados para demonstrar capacidade técnica e aplicação prática.</h2>
+            <h2>Casos selecionados para demonstrar capacidade tecnica e aplicacao pratica.</h2>
           </div>
 
           <div className="project-lab">
@@ -487,7 +487,7 @@ function App() {
         <section className="content-grid" id="stack">
           <div className="section-heading">
             <span className="section-kicker">Stack</span>
-            <h2>Tecnologias apresentadas como mapa de atuação e profundidade técnica.</h2>
+            <h2>Tecnologias apresentadas como mapa de atuacao e profundidade tecnica.</h2>
           </div>
 
           <div className="stack-matrix">
@@ -515,8 +515,8 @@ function App() {
 
         <section className="content-grid" id="certificacoes">
           <div className="section-heading">
-            <span className="section-kicker">Formação técnica</span>
-            <h2>Certificações organizadas em trilhas para destacar evolução e consistência.</h2>
+            <span className="section-kicker">Formacao tecnica</span>
+            <h2>Certificacoes organizadas em trilhas para destacar evolucao e consistencia.</h2>
           </div>
 
           <div className="education-panel">
@@ -556,8 +556,8 @@ function App() {
 
         <section className="content-grid timeline-section">
           <div className="section-heading">
-            <span className="section-kicker">Leitura rápida</span>
-            <h2>Em poucos segundos, o visitante precisa entender três pontos centrais.</h2>
+            <span className="section-kicker">Leitura rapida</span>
+            <h2>Em poucos segundos, o visitante precisa entender tres pontos centrais.</h2>
           </div>
 
           <div className="timeline">
@@ -576,10 +576,10 @@ function App() {
         <section className="cta-section" id="contato">
           <div>
             <span className="section-kicker">Contato</span>
-            <h2>Se a proposta for construir software confiável, esta é a porta de entrada.</h2>
+            <h2>Se a proposta for construir software confiavel, esta e a porta de entrada.</h2>
             <p>
-              O portfólio foi pensado para apresentar valor com clareza. O próximo
-              passo é transformar essa leitura em conversa e oportunidade.
+              O portfolio foi pensado para apresentar valor com clareza. O proximo
+              passo e transformar essa leitura em conversa e oportunidade.
             </p>
           </div>
 
@@ -613,7 +613,7 @@ function App() {
               rel="noreferrer"
             >
               <FolderGit2 size={18} />
-              <span>Repositórios</span>
+              <span>Repositorios</span>
             </a>
           </div>
         </section>
